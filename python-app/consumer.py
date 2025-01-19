@@ -3,6 +3,7 @@ from kafka import KafkaConsumer
 TOPIC = 'test-topic'
 
 def consume_messages():
+    print("Consuming messages...")
     consumer = KafkaConsumer(
         TOPIC,
         bootstrap_servers='kafka:9092',

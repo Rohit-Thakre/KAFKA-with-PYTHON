@@ -4,6 +4,7 @@ TOPIC = 'test-topic'
 
 # Kafka Producer
 def produce_messages():
+    print("Producing messages...")
     producer = KafkaProducer(bootstrap_servers='kafka:9092')
     for i in range(10):
         message = f"Message {i}"
